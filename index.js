@@ -19,5 +19,10 @@ function deepestChild() {
   while (list || list === 0) {
     return list
   }
+  if (list) {
+    for (let i = 0; i < list.length; i++) {
+      next.push(list[i])
+    }
+  }
   return next
 }
